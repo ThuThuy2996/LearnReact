@@ -1,0 +1,196 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.box-content {
+  width: 100%;
+  margin: 50px auto;
+  .content-top{
+    margin-top: 0;
+    margin-bottom: 10px;   
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 800px;
+    margin: 0 auto;
+    .btn-add{
+      height: 40px;
+      background-color: #1b7539;
+      border: #086d2a;
+      width: 100px;
+      &:hover {
+        background-color: #17e75d;
+      }
+    }
+  }
+}
+
+.list-todo-content {
+  border:1px #282c34;  
+  width: 800px;
+  margin: 0 auto;
+ 
+  .todo-child {
+    &:first-child {
+      border-top: 1px solid grey;
+    }
+
+    .text {
+      margin: 0 10px; 
+      max-width: 200px; 
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .input-plan {  
+      height : 30px;
+      width: 450px;
+    }
+    position: relative;
+    height : 40px;
+    border-bottom: 1px solid grey;
+    margin : 10px;
+
+    .edit {
+      margin: 0 10px;
+    }
+    .btn-done {
+      height: 30px;
+      position: absolute;
+      right: 60px;
+      background-color: transparent;
+      color: #7c7e7c;
+      text-align: center;
+      border: 0px;
+
+      :hover {
+        color: #086d2a;
+        border: 0px;
+      }
+    }
+    .btn-edit {
+      height: 30px;
+      position: absolute;
+      right: 30px;
+      background-color: transparent;
+      color: #1833d1;
+      text-align: center;
+      border: 0px;
+
+      :hover {
+        //  background-color: #eb4545;
+        color: #0cbba4;
+        border: 0px;
+      }
+    }
+
+    .btn {
+      height: 30px;
+      position: absolute;
+      right: 0;
+      background-color: transparent;
+      color: #990606;
+      text-align: center;
+      border: 0px;
+
+      :hover {
+        // background-color: #eb4545;
+        color: #f02626;
+        border: 0px;
+      }
+
+    }
+  }
+}
+
+.form-content {
+  width: 800px;
+  margin: 0 auto;
+  .form-group {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 10px;   
+
+.err{
+  color: #f02626;
+}
+    .form-field {
+      height: 40px;
+      width: 500px;
+      min-width: 500px;
+      max-width: 500px;
+    }
+    .err-border {
+      border: 1px solid red;
+    }
+    .form-text {
+      margin-left: 50px;
+      width: 150px;
+      min-width: 150px;
+      max-width: 150px;
+      text-align: left;
+      font-size: 16px;
+    }
+    .text-right {
+      text-align: right;
+    }
+    .form-check{
+      height: 40px;
+      width: 40px;
+      margin-left: 0px;
+    }
+    .btn-sub{
+      height: 40px;
+      margin-left: 15px;
+      width: 450px;
+      &:hover {
+        background-color: chartreuse;
+        transition: all 1s;
+        border: #086d2a;
+      }
+    }
+  }
+  }
+
+.w250 {
+  width: 250px;
+  min-width: 250px;
+  max-width: 250px;
+}
